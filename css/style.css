@@ -1,0 +1,390 @@
+:root {
+    --a: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+}
+
+.left {
+    width: 280px;
+    min-width: 280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* this one */
+.right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 8px;
+    position: relative;
+}
+
+/* this one */
+.p-1 {
+    padding: 10px;
+}
+
+.home ul li {
+    display: flex;
+    gap: 15px;
+    width: 20px;
+    list-style: none;
+    padding-top: 14px;
+}
+
+.header {
+    display: flex;
+    gap: 150px;
+    width: 275px;
+    list-style: none;
+    padding-top: 14px;
+    padding: 23px 14px;
+    align-items: center;
+}
+
+.font {
+    font-size: 20px;
+}
+
+.library {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* this one */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap: 8px;
+    color: gray;
+    padding: 8px 10px;
+    flex-shrink: 0;
+}
+
+/* this one */
+.footer a {
+    color: gray;
+}
+
+/* .right{
+    margin: 16px 415px;
+    position:relative;
+} */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    /* gap: 4px; */
+    background-color: rgb(34, 34, 34);
+    width: 97%;
+}
+
+.header>* {
+    padding: 10px;
+}
+
+.spotifyplaylist {
+    flex: 1;
+    overflow-y: auto;
+    padding: 30px 50px;
+}
+
+/* this one */
+.cardContainer {
+    margin: 30px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 80vh;
+}
+
+.card {
+    padding: 10px;
+    width: 180px;
+    /* width: 200px; */
+    border-radius: 6px;
+    background-color: #252525;
+    position: relative;
+}
+
+.card>* {
+    padding-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* .play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #00FF00;
+    height: 28px;
+    width: 28px;
+} */
+.play {
+    top: 162px;
+    right: 23px;
+    position: absolute;
+    display: flex;
+    transition: all 0.7s ease-out;
+    opacity: var(--a);
+}
+
+.card:hover {
+    background-color: #111111;
+    cursor: pointer;
+    --a: 1;
+}
+
+.buttons>* {
+    margin: 0 3px;
+}
+
+.signupbtn {
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signupbtn:hover {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+.loginbtn {
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.loginbtn:hover {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.playbar {
+    flex-shrink: 0;
+    background-color: rgb(139, 193, 139);
+    padding: 12px 20px;
+    width: 98%;
+    border-radius: 20px;
+    height: 72px;
+    position: sticky;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* this one */
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.timevol {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.songtime {
+    color: black;
+    padding: 0 12px;
+    width: 125px;
+}
+
+.volume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.range input {
+    cursor: pointer;
+}
+
+.songList {
+    padding: 0 1px;
+}
+
+.songList ul li {
+    list-style-type: decimal;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid white;
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songList .info {
+    font-size: 13px;
+    width: 344px;
+
+}
+
+.songList {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 8px;
+}
+
+/* this one */
+.playnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playnow span {
+    font-size: 15px;
+    width: 100px;
+    padding: 12px;
+}
+
+.seekbar {
+    height: 4px;
+    width: 97%;
+    background: #111111;
+    border-radius: 10px;
+    bottom: 5px;
+    position: absolute;
+    cursor: pointer;
+    margin: 6px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(14, 14, 14);
+    position: absolute;
+    top: -5px;
+    left: 0%;
+    cursor: pointer;
+    /* bottom: 11px; */
+}
+
+.songbuttons img {
+    cursor: pointer;
+}
+
+.songinfo .songtime {
+    color: #111111;
+    padding: 0 12px;
+
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburgerContainer {
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    display: flex;
+}
+
+/* @media (max-width: 1400px) {
+  .left{
+   background-color: black;
+    position: absolute;
+    left: -120%;
+    transition: all .3s;
+    z-index: 1;
+    width: 373px;
+  }
+  .left .close .img{
+    position: absolute;
+    right: 31px;
+    top:25px;
+    width: 29px;
+  }
+  .right{
+    width: 100vw;
+  }
+  .seekbar{
+    width: cal(100vw-60vw);
+  }
+  .playbar{
+    width: cal(100vw-70vw);
+  }
+  .hamburger{
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .songinfo,  .songtime{
+    width: auto;
+  }
+} */
+
+/* Hide all scrollbars globally for a sleek look */
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    o
+}
