@@ -1,4 +1,8 @@
 {
     "title": "Copyright Songs",
-    "description": "Songs for you"
+    "description": "Songs for you",
+    "songs": [
+        "Fidaa Tegi Pannu.mp3",
+        "No Reason.mp3"
+    ]
 }

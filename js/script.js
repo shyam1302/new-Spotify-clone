@@ -166,16 +166,16 @@ async function displayAlbums() {
         try {
             const safeFolder = folder.split(' ').join('%20');
             const timestamp = new Date().getTime();
-            
+
             const response = await fetch(`./song/${safeFolder}/info.json?t=${timestamp}`);
             if (!response.ok) throw new Error("JSON Fetch Failed");
-            
+
             const data = await response.json();
             const h1 = card.querySelector("h1");
             const p = card.querySelector("p");
             if (h1) h1.textContent = data.title;
             if (p) p.textContent = data.description;
-            
+
             const img = card.querySelector("img");
             if (img) img.src = `./song/${safeFolder}/cover.jpg?t=${timestamp}`;
         } catch (err) {

@@ -1,4 +1,13 @@
 {
     "title": "English Songs",
-    "description": "Songs for you"
+    "description": "Songs for you",
+    "songs": [
+        "After Hours - The Highlights (320 kbps).mp3",
+        "Die For You - The Highlights (320 kbps).mp3",
+        "Give Me Mercy - Hurry Up Tomorrow (320 kbps).mp3",
+        "Hurry Up Tomorrow - Hurry Up Tomorrow (320 kbps).mp3",
+        "Please Please Please - Please Please Please (320 kbps).mp3",
+        "Red Terror - Hurry Up Tomorrow (320 kbps).mp3",
+        "Timeless - Hurry Up Tomorrow (320 kbps).mp3"
+    ]
 }

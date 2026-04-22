@@ -1,4 +1,11 @@
 {
     "title": "Haryanvi Songs",
-    "description": "Songs for you"
+    "description": "Songs for you",
+    "songs": [
+        "Apsara_1.mp3",
+        "Kaat_1.mp3",
+        "Mama_Fufi_1.mp3",
+        "My_Definition_1.mp3",
+        "Rola_Yaara_Kaa_1.mp3"
+    ]
 }

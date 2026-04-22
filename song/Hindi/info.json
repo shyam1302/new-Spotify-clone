@@ -1,4 +1,13 @@
 {
     "title": "Hindi Songs",
-    "description": "Songs for you"
+    "description": "Songs for you",
+    "songs": [
+        "Arz Kiya Hai  Coke Studio Bharat.mp3",
+        "Dooron Dooron - Unplugged -.mp3",
+        "Ek Din - Title Track (Female).mp3",
+        "Heeriye (feat. Arijit Singh).mp3",
+        "Kinna Sona - Bhaag Johnny (320 kbps).mp3",
+        "Phir Kabhi - M.S. Dhoni.mp3",
+        "Tum Se Hi.mp3"
+    ]
 }
